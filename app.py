@@ -18,8 +18,8 @@ app = Flask(__name__)
 # Database Setup
 #################################################
 
-# app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db/bellybutton.sqlite"
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL", "") or "sqlite:///db/bellybutton.sqlite"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db/bellybutton.sqlite"
+# app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL", "") or "sqlite:///db/bellybutton.sqlite"
 
 # Remove tracking modifications
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
